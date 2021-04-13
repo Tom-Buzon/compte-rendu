@@ -1,0 +1,39 @@
+compte rendu d'activité
+date 06/04/2021  heure:14h20
+
+Au commencement on m'a présenter les locaux, mon poste et l'équipe.
+On m'a ensuite expliquer en quoi allé conssister mon travail en me présentant tout l'environement et l'interêt de mes missions.
+Pour ce faire on m'a expliquer le fonctionement de l'ESA, pour que je comprenne à quoi servent les logiciel que nous dévelopons en interne. 
+En effet nous gérons des bases de données qui permettent par exemple de sélectionner les candidats les plus adapté au différentesz missions que l'ESA doit réalier.
+Les deux principaux logiciels qui me concernent actuellement sont Worforce et Dashboard.
+
+
+Pour ce faire, il me faut me connecer à une machine virtuelle, afin de pouvoir accéder au bases de données.
+Il me faut donclancer "Hyper V", qui me permet d'accéder aux machines virtuelles dont j'ai besoin. 
+Dans le cas présent, j'en utilise deux : Apache, qui simule des serveurs web et IPCDB 19, qui me permet de contacter Oracle, sur lequel sont stocké les bases de données.
+Il a d'abord fallu les paramètrer, afin que les adresse IP concordent, pour que la machine physique et la machine virtuelle soient bien en relation.
+Ensuite il m'a fallu accéder aux services windows de la machine virtuelle pour activer trois posts : le listener de oracle, oracle DB19homeTNSlistener, et les bases de données oracles : Oracle ORCL et PCDB.
+Une fois de plus, il a fallu éditer ces fichiers pour vérifier que l'adresse IP était bien la bonne.
+Au final, il a fallu lancer Xamp depuis la machine physique afin de pouvoir me connecter au serveur apache.
+
+La connection établie, je peux accéder au Workforce et au Dashboard.
+Il m'a donc fallu démarer le browser, entré l'url ipcdb.local/Workforce/worforce.php qui me permis d'accéder à la version web du fichier sauvegardé dans ma machine.
+une fois les login rempli, je peux naviguer librement sur le site.
+Je fais ensuite la même procédure pour acccéder à Dashboard.
+
+Une fois sur cette page, Philippe m'explique qu'il y a des problèmes de compatibilité entre les différents navigateurs.
+Cependant il est censé marcher parfaitement sur Firefox. Il ne me reste donc plus qu'à ouvrir les deux autres browser (edge et chrome) afin de comparer point par point et recensé les irégularité.
+Le fait est que je n'en ai pas trouvé, tout me parréssait marcher normalement. Cependant, lorsque nous ouvrons la consoles, de nombreuses ligne indiquent de bug, que je n'avais donc pas vu a l'oeuil nu.
+
+Philippe me demanda ensuite d'installer dbeaver.io, qui devait me permettre de tester du code php dans sa console avant de l'envoyer de manière définitive dans le code.
+Mais le fait est que nous avons utiliser toad, qui a la même finalité, mais depuis la VM.
+Il me demanda également de me documenter sur les jquerry et sur les hight chart.
+J querry est une bibliothèque de JavaScript et hight charts et un framework javascript qui permet de faire des graphiques grâce à des images vectorielles.
+
+Nous avons alors constater un bug d'affichage dans le Workplace, une barre de recherche s'agrandissait lorsque le texte était trop grand, et masquait alors le bouton annuler.
+Il me demanda alors de voir si je pouvais trouver une solution.
+Je vis trois hyppothèse, nous pouvions soit bloquer la taille de la barre de recherche pour qu'elle ne dépende pas du texte, soit déplacer la croix, ou encore ajouter une feature au filtre pour qu'elle ajoute annuler lorsque l'on clique dessus.
+
+Cependant, philippe se rendis cocmpte que nous avancion trop vite par rapport à mes capacité de développeur web débutant. 
+Il a donc décider de tout reprendre depuis le début et me demanda de taper un texte sur un éditeur de texte, afin de voir la différence entre le .txt et le .html .
+Il voulait également que j'ajoute un champ date et heure, pour me montrer la différence en le web statique et dynamique.

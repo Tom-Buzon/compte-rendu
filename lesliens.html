@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>CR1</Title>
+</head>
+<body>
+<div id="bloc_page">
+	<div id = "header">
+		<div id="logo">
+		
+			<img src="images/jpsi_small2.gif" alt="logo">
+		</div>
+		</br>
+		<h1>
+		Compte rendu d'activité 
+		<br/>
+
+		</h1>
+	</div>
+	
+	<div id="nav">
+			<ul>
+				<li><a href ="CR1.html"> acceuil </a></li>
+				<li>test</li>
+				<li>test</li>
+				<li>test</li>
+				<li>test</li>
+			</ul>
+	</div>
+	<div id="contenu">
+			<h2> Lien vers le site du groupe et vers le site PMIS de JPSI </h2>
+				<ul>
+					<li><a href="http://jpsigroup.net/" target="_blank"> Le groupe JPSI </a></li>
+					<li><a href="http://www.jpsigroup.net/conges/" target="_blank">le site PMIS de JPSI </a> </li>
+				</ul>						
+			
+			<h2>envoi de fichier</h2>
+		<form method="post" action="reception.php" enctype="multipart/form/data">
+					<label for="fichier"> fichier</label><br/>
+					<input type="file" name="fichier" id="fichier" />
+					<input type="submit" name="submit" value="envoyer" />
+		</form>
+		
+			<h3> Test des balise de mise en valeur</h3>
+			
+			<p> <em> ce texte est dans la balise em </em> alors que <strong> ici nous sommes dans strong</strong> et enfin <mark>ici nous sommes dans mark </mark> </p>
+	</div>
+</div>
+</body>
+</html>
+					

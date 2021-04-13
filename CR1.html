@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>CR1</Title>
+</head>
+<body>
+<div id="bloc_page">
+	<div id = "header">
+		<div id="logo">		
+			<img src="images/jpsi_small2.gif" alt="logo" title="il est pas magnifique notre logo ?">
+		</div>
+		
+		<h1>
+		Compte rendu d'activité 
+		</h1>
+			<div class="login">
+				<form method="post" action="traitement.php">
+					<p> <label for="pseudo"> Votre pseudo </label> <input type="texte" name="pseudo" id="pseudo" placeholder="ex:pseudo"/> </p>
+				</form>
+			</br>
+				<form method="post" action="traitement.php">
+					<p> <label for="password">Votre mot de passe</label> <input type="password" name="password" id="password" placeholder="votre mot de passe"/> </p>
+				</form>
+			</div>
+				
+	</div>
+	
+	<div id="nav">
+			<ul>
+				<li> <a href="lesliens.html" title="liens vers le site du groupe et PMIS"> les liens </a> </li>
+				<li> <a href="mailto:tbuzon@jpsigroup.net">contact</a></li>
+				<li><a href="doc.zip">téléchargez la doc</a></li>
+				<li><a href="memento.html">memento </a></li>
+				<li>test</li>
+			</ul>
+	</div>
+	
+	
+	<div id="summary">                   <!-- cela doit évoluer, pourquoi pas associer le sommaire aux div semaine par semaines-->
+			<h2> Sommaire</h2>
+			<ol>
+				<li><a href="#semaine1">Semaine 1</a></li>
+				<li><a href="#semaine2">Semaine 2</a></li>
+				<li>test</li>
+				<li>test</li>
+				<li>test</li>
+			</ol>
+	</div>
+	<div id="contenu">
+		<div id="semaine1">
+			<h3> Semaine 1</a></h3>  <!-- penser à mettre à jour au fil des semaine pour avoir une trace de la formation-->
+		
+			<p>
+			Au commencement on m'a présenter les locaux, mon poste et l'équipe.<br/>
+			On m'a ensuite expliqué quel serait mon travail en me présentant tout l'environement et l'interêt de mes missions.<br/>
+			Pour ce faire on m'a expliqué le fonctionement de l'ESA, pour que je comprenne à quoi servent les logiciels que nous dévelopons en interne. <br/>
+			En effet nous gérons des bases de données qui permettent par exemple de sélectionner les candidats les plus adaptés au différentes missions que l'ESA doit réaliser.<br/>
+			Les deux principaux logiciels qui me concernent actuellement sont Worforce et Dashboard.<br/>
+			</p>
+			<p>
+			Pour ce faire, il me faut me connecter à une machine virtuelle, afin de pouvoir accéder aux bases de données.<br/>
+			Il me faut donc lancer "Hyper V", qui me permet d'accéder aux machines virtuelles dont j'ai besoin. <br/>
+			Dans le cas présent, j'en utilise deux : Apache, qui simule des serveurs web et IPCDB 19, qui me permet de contacter Oracle, sur lequel sont stocké les bases de données.<br/>
+			Il a d'abord fallu les paramètrer, afin que les adresse IP concordent, pour que la machine physique et la machine virtuelle soient bien en relation.<br/>
+			Ensuite il m'a fallu accéder aux services windows de la machine virtuelle pour activer trois posts : le listener de oracle, oracle DB19homeTNSlistener, et les bases de données oracles : Oracle ORCL et PCDB.<br/>
+			Une fois de plus, il a fallu éditer ces fichiers pour vérifier que l'adresse IP était bien la bonne.<br/>
+			Au final, il a fallu lancer Xamp depuis la machine physique afin de pouvoir me connecter au serveur apache.<br/>
+			</p>
+			<p>
+			La connection établie, je peux accéder au Workforce et au Dashboard.<br/>
+			Il m'a donc fallu démarer le browser, entré l'url ipcdb.local/Workforce/worforce.php qui me permis d'accéder à la version web du fichier sauvegardé dans ma machine.<br/>
+			une fois les login rempli, je peux naviguer librement sur le site.<br/>
+			Je fais ensuite la même procédure pour acccéder à Dashboard.<br/>
+			</p>
+			<p>
+			Une fois sur cette page, Philippe m'explique qu'il y a des problèmes de compatibilité entre les différents navigateurs.<br/>
+			Cependant il est censé marcher parfaitement sur Firefox. Il ne me reste donc plus qu'à ouvrir les deux autres browser (edge et chrome) afin de comparer point par point et recensé les irégularité.<br/>
+			Le fait est que je n'en ai pas trouvé, tout me parréssait marcher normalement. Cependant, lorsque nous ouvrons la consoles, de nombreuses ligne indiquent de bug, que je n'avais donc pas vu a l'oeuil nu.<br/>
+			</p>
+			<p>
+			Philippe me demanda ensuite d'installer dbeaver.io, qui devait me permettre de tester du code php dans sa console avant de l'envoyer de manière définitive dans le code.<br/>
+			Mais le fait est que nous avons utiliser toad, qui a la même finalité, mais depuis la VM.<br/>
+			Il me demanda également de me documenter sur les jquerry et sur les hight chart.<br/>
+			J querry est une bibliothèque de JavaScript et hight charts et un framework javascript qui permet de faire des graphiques grâce à des images vectorielles.<br/>
+			</p>
+			<p>
+			Nous avons alors constater un bug d'affichage dans le Workplace, une barre de recherche s'agrandissait lorsque le texte était trop grand, et masquait alors le bouton annuler.<br/>
+			Il me demanda alors de voir si je pouvais trouver une solution.<br/>
+			Je vis trois hyppothèse, nous pouvions soit bloquer la taille de la barre de recherche pour qu'elle ne dépende pas du texte, soit déplacer la croix, ou encore ajouter une feature au filtre pour qu'elle ajoute annuler lorsque l'on clique dessus.<br/>
+			</p>
+		
+		</div>
+		
+		<div id="semaine2">
+			<h3>Semaine 2</h3>
+			<p>
+			Philippe se rendis cocmpte que nous avancions trop vite par rapport à mes capacité de développeur web débutant. <br/>
+			Il a donc décider de tout reprendre depuis le début et me demanda de taper un texte sur un éditeur de texte, afin de voir la différence entre le .txt et le .html .<br/>
+			Il voulait également que j'ajoute un champ date et heure, pour me montrer la différence en le web statique et dynamique.<br/>
+			</p>
+			<p> Je du donc mettre en place un site qui permettrait de retracer mon activité point par point en me permettant d'apprendre les bases.<br/>
+			Pour ce faire j'ai conçu ce site, avec plusieurs page et des liens permettant de naviguer entre elles. <br/></p>
+			<p> il me fis également intégrer des liens vers des pages web, en me précisant qu'il voulait que ces pages s'ouvrent sur d'autre fenêtre.<br/>
+			Il me demanda également de mettre en place un zone de téléchargement, consigne que je compris mal puisque j'ai créé un lien permetant au client de télécharger depuis le serveur, alors qu'il voulait en fait l'inverse</br></p>
+			<p> Cette consigne me permis de découvrir l'existance des formulaire et donc de toucher du doigt le php, puisque pour interpréter ces champs il faut passer par ce langage. <br/>
+			J'ai donc réussi à créer cette feature, mais on ne pouvait pas vraiment s'en servir puisque je ne connais pas encor le php.<br/></p>
+			<p> Il m'a également demander de retrasser son site internet car certain liens ne marchait malheuresement plus, j'aurais donc bientôt la mission de fixer ces bugs.<br/>
+			<p>Jai également utilisé les balises tableaux (table) pour créer une page où j'entrepose toutes les balises que j'ai car ma mémoire n'est pas infaillible contrairement à celle du serveur!</p>
+			<p> Enfin, j'ai créer un template de page web en flexbox pour m'approprier ce système et pouvoir l'utiliser par la suite.</p>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+		JPSI Group is the best # tu peux pas test
+		</p>
+	</div>
+</body>
+</html>

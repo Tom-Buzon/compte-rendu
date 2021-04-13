@@ -1,0 +1,131 @@
+body
+{
+	margin:0px;
+	background-color:#a9aa81;
+}
+
+
+
+.header
+{
+	background-color:#a9aa81;
+	display:flex;
+	flex-flow:column ;
+	justify-content: space-around;
+	align-content: center;
+	height:150px;
+	margin-left:0px;
+	width:100%;
+}
+
+.titre
+{
+	text-align:center;
+}
+.navbar
+{
+	height:60px;
+	display:flex;
+	align-content:center;
+	justify-content:space-around;
+	
+}
+
+.btn
+
+{
+		margin:auto;
+		border: 1px black solid;
+		width:25%;
+		text-align:center;
+		border-top:none;
+		border-bottom:none;
+}
+
+.page
+{
+	display:flex;
+	flex-wrap: nowrap;
+
+}
+
+
+.nav
+{
+	background-color: #a9aa81;
+	display:flex;
+	flex-basis:10%;
+}
+
+.contenu
+{
+	flex-basis:90%;
+	display:flex;
+	flex-direction:column;
+}
+.section
+{
+	background-color: #a89360;
+	flex-basis:100%;
+	display:flex;
+	flex-direction:row;
+	border:1px solid red;
+	border-radius:10px;
+	
+}
+
+.titreetarticle
+{
+	display:flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin:5px;
+}
+
+.titresection
+{
+	background-color:#d0af70;
+	border:1px solid black;
+	text-align:center;
+	margin:5px;
+	border-radius:10px;
+}
+	
+
+.article
+{
+	background-color: #a89446;
+	height:90%;
+	flex-basis:60%;
+	border:1px solid black;
+	overflow:auto;
+	margin:5px;
+	border-radius:10px;
+}
+
+.lesasides
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin:5px;
+}
+.aside
+{
+	background-color:#ce9d5e;
+	height:50%;
+	flex-basis:40%;
+	border:1px solid black;
+	margin: 5%;
+	overflow:auto;
+	border-radius:10px;
+}
+
+.footer
+{
+	background-color:#b5b564;
+	text-align:center;
+	height:30px;
+	margin: 0px;
+}
